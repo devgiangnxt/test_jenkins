@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'giangnxt-app'
           slot-name: 'Production'
-          package: '*.jar'
+          package: 'test_jenkins_sync-0.0.1-SNAPSHOT.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EFE8596D1C2E4DE9A0ECBDCB807B459C }}
