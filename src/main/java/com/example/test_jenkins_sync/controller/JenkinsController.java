@@ -10,6 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class JenkinsController {
     @PostMapping("/jenkins-notification")
     public ResponseEntity<?> handleJenkinsNotification(@RequestBody String notification) {
+        System.out.println("POST: "+ notification);
+        return ResponseEntity.ok().body(notification);
+    }
+
+    @GetMapping("/jenkins-notification")
+    public ResponseEntity<?> handleJenkinsNotificationGet(@RequestBody String notification) {
+        System.out.println("GET: "+ notification);
         return ResponseEntity.ok().body(notification);
     }
 }
