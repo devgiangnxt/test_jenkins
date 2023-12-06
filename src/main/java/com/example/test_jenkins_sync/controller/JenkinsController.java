@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class JenkinsController {
-    @GetMapping("/jenkins-notification")
+    @PostMapping("/jenkins-notification")
     public ResponseEntity<?> handleJenkinsNotification(@RequestBody String notification) {
         return ResponseEntity.ok().body(notification);
     }
